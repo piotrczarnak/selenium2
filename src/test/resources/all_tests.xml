@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All Pet Store Tests" parallel="tests" thread-count="3">
+
+    <test name="Login Tests">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Main page Tests">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="tests.MainPageTests"/>
+        </classes>
+    </test>
+
+
+</suite>
